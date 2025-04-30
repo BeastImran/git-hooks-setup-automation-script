@@ -1,0 +1,1 @@
+# git-hooks-setup-automation-script
