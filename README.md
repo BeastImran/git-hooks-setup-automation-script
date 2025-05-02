@@ -94,7 +94,7 @@ Copy the bellow command and run in your favourite terminal
 ```bash
 curl https://raw.githubusercontent.com/BeastImran/git-hooks-setup-automation-script/main/git-init-hook.sh \
 -o ~/.git-init-hook.sh && \
-chmod +x ~/.git-init-hook.sh
+chmod +x ~/.git-init-hook.sh &&  ~/.git-init-hook.sh
 ```
 
 ## 🔍 What's Included in the Pre-commit Configuration
