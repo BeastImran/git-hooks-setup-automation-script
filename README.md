@@ -7,9 +7,7 @@ A powerful tool to automate pre-commit hook setup for your Git repositories with
 ![GitHub Forks](https://img.shields.io/github/forks/BeastImran/git-hooks-setup-automation-script?style=social)
 ![GitHub Action Status](https://img.shields.io/github/actions/workflow/status/BeastImran/git-hooks-setup-automation-script/.github%2Fworkflows%2Fsuper-linter.yml)
 
-<p align="center">
-  <img src="./assets/Git Hook Automation Tool in Action Screen Cap.gif" alt="Git-Init-Hook in action" width="1200">
-</p>
+![Git-Init-Hook in action](https://github.com/BeastImran/git-hooks-setup-automation-script/blob/3cf53147427597ab8c47a3872924fd578d0684a0/assets/Git%20Hook%20Automation%20Tool%20in%20Action%20Screen%20Cap.gif)
 
 ## ✨ Features
 
@@ -28,6 +26,7 @@ git custom-init
 ```
 
 This will:
+
 1. Initialize a Git repository
 2. Create a pre-commit configuration file
 3. Install required tools if they do not exists already (with your permission)
@@ -36,7 +35,7 @@ This will:
 
 ## 🖥️ Example Output
 
-```
+``` text
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                           ║
 ║   🚀 Git Init Hook - Pre-commit Automation Tool 🚀        ║
@@ -93,7 +92,9 @@ Git-Init-Hook configures your repository with several powerful pre-commit hooks:
 Copy the bellow command and run in your favourite terminal
 
 ```bash
-curl https://raw.githubusercontent.com/BeastImran/git-hooks-setup-automation-script/main/git-init-hook.sh -o ~/.git-init-hook.sh && chmod +x ~/.git-init-hook.sh
+curl https://raw.githubusercontent.com/BeastImran/git-hooks-setup-automation-script/main/git-init-hook.sh \
+-o ~/.git-init-hook.sh && \
+chmod +x ~/.git-init-hook.sh
 ```
 
 ## 🔍 What's Included in the Pre-commit Configuration
@@ -148,4 +149,5 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/BeastImran">BeastImran</a>
-</p>
+</p
+c
