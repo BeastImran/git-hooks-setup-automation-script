@@ -49,7 +49,7 @@ setup_git_alias() {
 
     # Check if the alias already exists
     if ! git config --global alias.custom-init >/dev/null 2>&1; then
-        git config --global alias.custom-init '!git init "$@" && ~/.git-init-hook.sh'
+        git config --global alias.custom-init '!git init "$@" && ~/.git-init-hook.sh init'
         print_success "Git alias 'custom-init' has been created!"
         print_info "Use ${BOLD}git custom-init${RESET}${BLUE} instead of ${BOLD}git init${RESET}${BLUE} to initialize repositories with the pre-commit setup."
     else
@@ -82,6 +82,7 @@ repos:
   - id: check-symlinks
   - id: check-yaml
   - id: check-added-large-files
+    args: [ "--maxkb=5000" ]
   - id: check-case-conflict
   - id: check-json
   - id: pretty-format-json
@@ -244,11 +245,14 @@ main() {
     return 0
 }
 
-# Setup the git alias (comment/uncomment based on your preference)
-setup_git_alias
-
-# If this script is being run directly (not through the alias)
-if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
-    main
+# If this script is being run directly (not through the alias). i.e no argument
+if [ -z "$1"  ]; then
+    # Setup the git alias (comment/uncomment based on your preference)
+    setup_git_alias
     exit $?
+elif [[ $1 == "init" ]]; then
+    # If this script is being run with custom-init
+    main
+else
+    print_error "Invalid argument(s) passed\n"
 fi
