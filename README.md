@@ -2,9 +2,10 @@
 
 A powerful tool to automate pre-commit hook setup for your Git repositories with style!
 
-![GitHub License](https://img.shields.io/github/license/beastImran/git-hooks-setup-automation-script/)
-![GitHub Stars](https://img.shields.io/github/stars/beastImran/git-hooks-setup-automation-script?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/beastImran/git-hooks-setup-automation-script?style=social)
+![GitHub License](https://img.shields.io/github/license/BeastImran/git-hooks-setup-automation-script)
+![GitHub Stars](https://img.shields.io/github/stars/BeastImran/git-hooks-setup-automation-script?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/BeastImran/git-hooks-setup-automation-script?style=social)
+![GitHub Action Status](https://img.shields.io/github/actions/workflow/status/BeastImran/git-hooks-setup-automation-script/.github%2Fworkflows%2Fsuper-linter.yml)
 
 <p align="center">
   <img src="./assets/Git Hook Automation Tool in Action Screen Cap.gif" alt="Git-Init-Hook in action" width="1200">
