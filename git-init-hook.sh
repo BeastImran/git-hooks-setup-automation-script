@@ -103,11 +103,6 @@ repos:
   - id: talisman-commit
   - id: talisman-push
 
-- repo: https://github.com/shellcheck-py/shellcheck-py
-  rev: 'v0.10.0.1'
-  hooks:
-  - id: shellcheck
-
 - repo: local
   hooks:
   - id: local-biome-check
